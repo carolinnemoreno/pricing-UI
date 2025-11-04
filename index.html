@@ -10,6 +10,7 @@
 	:root{
 	--cor-fundo-roxo:#DABDFA;
 	--cor-fundo-branco:#FEFEFE;
+	--cor-cinza: #8E9299;
 	}
 	body{
 	background-color: var(--cor-fundo-roxo);
@@ -17,22 +18,24 @@
 	}
 	
 	.texto1{
-	width: 660px;
+	width: 680px;
 	height: 40px;
 	background-color: var(--cor-fundo-branco);
 	margin:auto;
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
-	}
-	
-	h1{
 	text-align: center;
 	}
+	
+	.plano1 p{
+	color: var(--cor-cinza);
+	}
+	
 	
 	.principal{
 	background-color: var(--cor-fundo-branco);
 	display:flex;
-	width: 660px;
+	width: 680px;
 	height: 600px;
 	margin:  auto;
 	border-bottom-right-radius: 30px;
@@ -43,23 +46,25 @@
 	.plano1{
 	width: 300px;
 	height: 500px;
-	border: 1px solid black;
+	border: 1px solid gray;
 	border-radius: 10px;
 	margin: auto;
 	margin-right:7px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
+	padding:10px;
 	
 	}
 	
 	.plano2{
 	width: 300px;
 	height: 500px;
-	border: 1px solid, black;
+	border: 1px solid;
 	border-radius: 10px;
 	margin: auto;
 	margin-left:7px;
-	margin-bottom: 30px;
-	
+	margin-bottom: 15px;
+	background: radial-gradient(ellipse at top left, pink, pink,white);
+	padding:10px;
 	}
 	.toggle{
 	  display: inline-flex;
@@ -90,7 +95,9 @@
     }
 	
 	</style>
-
+	
+	
+	
 </head>
 <body>
 <div class="texto1"><h1>Choose a plan that's right for you<h1>
@@ -101,8 +108,14 @@
     <label for="yearly">Yearly</label>
   </div></div>
 <div class="principal"> 
-<div class="plano1"></div>
-<div class="plano2"></div>
+<div class="plano1">
+<h1>Premium</h1>
+<p>4k + HDR</p>
+<p><span style="font-weight: bold; font-size:36px; color:black;">$15</span> per mouth</p>
+</div>
+<div class="plano2">
+<h1>Basic</h1>
+</div>
 
 </div>
 
