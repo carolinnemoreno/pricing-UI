@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
 	<title>Campaign</title>
 	
 	<style>
@@ -14,6 +17,7 @@
 	--cor-destaque: #f0e8ff;
 	--cor-cinza-claro: #DBDBDB;
 	--cor-rosa--claro:#DB66BA;
+	--cor-branco-off: #FEFEFE;
 	}
 	body{
 	background-color: var(--cor-fundo-roxo);
@@ -28,11 +32,14 @@
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	text-align: center;
+	font-family: "Assistant", sans-serif;
+
 	
 	}
 	
 	.plano1 p{
 	color: var(--cor-cinza);
+
 	}
 	
 	
@@ -52,34 +59,38 @@
 	.plano1{
 	width: 300px;
 	height: 500px;
-	border: 1px solid gray;
+	border: 1px solid var(--cor-cinza-claro);
 	border-radius: 10px;
 	margin: auto;
 	margin-right:7px;
 	margin-bottom: 15px;
-	padding:10px;
+	padding:5px;
+	
 	
 	}
 	
 	.plano2{
 	width: 300px;
 	height: 500px;
-	border: 1px solid gray;
+	border: 1px solid white ;
 	border-radius: 10px;
 	margin: auto;
 	margin-left:7px;
 	margin-bottom: 15px;
 	background: radial-gradient(ellipse at top left, pink, pink,white);
-	padding:10px;
+	padding:5px;
+	
 	}
+	
 	.toggle{
 	  display: inline-flex;
 	  background-color: #fff;
 	  border: 1px solid #ddd;
-	  border-radius: 25px;
+	  border-radius: 5px;
 	  overflow: hidden;
-	  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+	
 	  font-size:16px;
+	  
 	}
 	
 	.toggle input {
@@ -122,7 +133,7 @@
 	
 	}
 	
-	button{
+	.start{
 	border-radius: 10px;
 	padding: 7px 70px 7px 70px;
 	color:var(--cor-cinza);
@@ -130,7 +141,7 @@
 	background-color: var(--cor-fundo-branco);
 	display:block;
 	margin: 0 auto;
-	margin-top:70px;
+	margin-top:30px;
 	}
 	.bi-bullseye{
 	padding-top: 20px;
@@ -141,7 +152,67 @@
 	color:var(--cor-fundo-branco);
 	font-size:30px;
 	}
-
+	.box{
+	display: flex;
+	margin:0;
+	}
+	.offer{
+	margin:30px;
+	margin-left: 5px;
+	margin-bottom: 0;
+	}
+	
+	.offer p {
+	font-size: 10px;
+	width: 60px;
+	height: 10px;
+	padding: 2px;
+	border: 1px solid var(--cor-branco-off);
+	text-align:center;
+	margin:5px;
+	color: var(--cor-branco-off);
+	border-radius: 5px;
+	}
+	
+	.plano2 p{
+	color: var(--cor-cinza);
+	margin-top:0;
+	margin-bottom:12px;
+	font-family: "Assistant", sans-serif;
+	
+	}
+	.linha2{
+	width:300px;
+	height:1px;
+	background-color:var(--cor-branco-off);
+	
+	}
+	.lista2{
+	list-style:none;
+	padding:0;
+	margin:0;
+	margin-top: 30px;
+	}
+	
+	.lista2 li {
+	  line-height: 1.8; 
+	}
+	
+	
+	.start2{
+	border-radius: 10px;
+	padding: 7px 70px 7px 70px;
+	color: var(--cor-branco-off);
+	background-color: red;
+	display:block;
+	margin: 0 auto;
+	margin-top:30px;
+	border:none;
+	}
+	
+	h1{
+	font-family: "Assistant", sans-serif;
+	}
 	</style>
 	
 	
@@ -169,11 +240,26 @@
 <li><i class="bi bi-check"></i>Tv, mobile, phone, tablet</li>
 <li><i class="bi bi-check"></i>4 devices</li>
 </ul>
-<button>Get started</button>
+<button class="start">Get started</button>
 </div>
 <div class="plano2">
 <i class="bi bi-gem"></i>
+<div class="box">
 <h1>Basic</h1>
+<div class="offer"> <p>Best ofer</p>
+</div>
+</div>
+<p>720</p>
+<p><span style="font-weight: bold; font-size:36px; color:black;">$7</span> per mouth</p>
+<div class="linha2"></div><br>
+<ul class="lista2">
+<li><i class="bi bi-check"></i>Good video quality</li>
+<li><i class="bi bi-check"></i>720 (HD)</li>
+<li><i class="bi bi-check"></i>Standard audio</li>
+<li><i class="bi bi-check"></i>Tv, mobile, phone, tablet</li>
+<li><i class="bi bi-check"></i>1 devices</li>
+</ul>
+<button class="start2">Get started</button>
 </div>
 
 </div>
