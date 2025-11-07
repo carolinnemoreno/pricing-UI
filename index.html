@@ -11,6 +11,9 @@
 	--cor-fundo-roxo:#DABDFA;
 	--cor-fundo-branco:#FEFEFE;
 	--cor-cinza: #8E9299;
+	--cor-destaque: #f0e8ff;
+	--cor-cinza-claro: #DBDBDB;
+	--cor-rosa--claro:#DB66BA;
 	}
 	body{
 	background-color: var(--cor-fundo-roxo);
@@ -22,9 +25,10 @@
 	height: 40px;
 	background-color: var(--cor-fundo-branco);
 	margin:auto;
-	border-top-right-radius: 30px;
-	border-top-left-radius: 30px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 	text-align: center;
+	
 	}
 	
 	.plano1 p{
@@ -38,8 +42,10 @@
 	width: 680px;
 	height: 600px;
 	margin:  auto;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.2);
+
 	
 	}
 	
@@ -58,7 +64,7 @@
 	.plano2{
 	width: 300px;
 	height: 500px;
-	border: 1px solid;
+	border: 1px solid gray;
 	border-radius: 10px;
 	margin: auto;
 	margin-left:7px;
@@ -89,11 +95,53 @@
     }
 	
 	 .toggle input:checked + label {
-      background-color: #f0e8ff; /* cor de destaque */
+      background-color: var(--cor-destaque); 
       color: #222;
       
     }
 	
+	.lista{
+	list-style:none;
+	padding:0;
+	margin:0;
+	margin-top: 30px;
+	}
+	li {
+	  display: flex;
+	  align-items: center; 
+	  gap: 6px; 
+		}
+	.lista li {
+	  line-height: 1.8; 
+	}
+	
+	.linha{
+	width:300px;
+	height:1px;
+	background-color:var(--cor-cinza-claro);
+	
+	}
+	
+	button{
+	border-radius: 10px;
+	padding: 7px 70px 7px 70px;
+	color:var(--cor-cinza);
+	border: 1px solid var(--cor-cinza);
+	background-color: var(--cor-fundo-branco);
+	display:block;
+	margin: 0 auto;
+	margin-top:70px;
+	}
+	.bi-bullseye{
+	padding-top: 20px;
+	font-size: 30px;
+	color: var(--cor-rosa--claro);
+	}
+	.bi-gem{
+	color:var(--cor-fundo-branco);
+	font-size:30px;
+	}
+
 	</style>
 	
 	
@@ -109,11 +157,22 @@
   </div></div>
 <div class="principal"> 
 <div class="plano1">
+<i class="bi bi-bullseye"></i>
 <h1>Premium</h1>
 <p>4k + HDR</p>
 <p><span style="font-weight: bold; font-size:36px; color:black;">$15</span> per mouth</p>
+<div class="linha"></div><br>
+<ul class="lista">
+<li><i class="bi bi-check"></i>Best video quality</li>
+<li><i class="bi bi-check"></i>4k (ultra HD)+ HDR</li>
+<li><i class="bi bi-check"></i>Special audio</li>
+<li><i class="bi bi-check"></i>Tv, mobile, phone, tablet</li>
+<li><i class="bi bi-check"></i>4 devices</li>
+</ul>
+<button>Get started</button>
 </div>
 <div class="plano2">
+<i class="bi bi-gem"></i>
 <h1>Basic</h1>
 </div>
 
