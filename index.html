@@ -47,7 +47,9 @@
 	.principal{
 	background-color: var(--cor-fundo-branco);
 	display:flex;
-	width: 680px;
+	width: 90%;
+	max-width: 680px;
+    flex-wrap: wrap;
 	height: 600px;
 	margin:  auto;
 	border-bottom-right-radius: 10px;
@@ -58,7 +60,8 @@
 	}
 	
 	.plano1{
-	width: 300px;
+	width: 100%;
+    max-width: 300px;
 	height: 500px;
 	border: 1px solid var(--cor-cinza-claro);
 	border-radius: 10px;
@@ -71,6 +74,8 @@
 	}
 	
 	.plano2{
+	width: 100%;
+    max-width: 300px;
 	width: 300px;
 	height: 500px;
 	border: 1px solid white ;
@@ -224,7 +229,7 @@
 	
 </head>
 <body>
-<div class="texto1"><h1>Choose a plan that's right for you<h1>
+<div class="texto1"><h1>Choose a plan that's right for you</h1>
  <div class="toggle">
     <input type="radio" id="monthly" name="plan" checked>
     <label for="monthly">Monthly</label>
@@ -274,8 +279,8 @@
 const monthly = document.getElementById("monthly");
 const yearly = document.getElementById("yearly");
 
-const precoP = document.querySelector("#precoP ");
-const precoB = document.querySelector("#precoB ");
+const precoP = document.querySelector("#precoP");
+const precoB = document.querySelector("#precoB");
 
 monthly.addEventListener("change", () => {
   if (monthly.checked) {
