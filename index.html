@@ -33,10 +33,14 @@
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	text-align: center;
+	font-family: "Assistant", sans-serif;
+
+	
 	}
 	
 	.plano1 p{
 	color: var(--cor-cinza);
+
 	}
 	
 	
@@ -210,8 +214,12 @@
 	h1{
 	font-family: "Assistant", sans-serif;
 	}
-	</style>
 	
+	
+
+
+	</style>
+
 	
 	
 </head>
@@ -222,13 +230,14 @@
     <label for="monthly">Monthly</label>
     <input type="radio" id="yearly" name="plan">
     <label for="yearly">Yearly</label>
+	
   </div></div>
 <div class="principal"> 
 <div class="plano1">
 <i class="bi bi-bullseye"></i>
 <h1>Premium</h1>
 <p>4k + HDR</p>
-<p><span style="font-weight: bold; font-size:36px; color:black;">$15</span> per mouth</p>
+<h2 id="precoP">$15</h2>
 <div class="linha"></div><br>
 <ul class="lista">
 <li><i class="bi bi-check"></i>Best video quality</li>
@@ -246,8 +255,8 @@
 <div class="offer"> <p>Best ofer</p>
 </div>
 </div>
-<p>720p</p>
-<p><span style="font-weight: bold; font-size:36px; color:black;">$7</span> per mouth</p>
+<p>720</p>
+<h2 id="precoB">$7</h2>
 <div class="linha2"></div><br>
 <ul class="lista2">
 <li><i class="bi bi-check"></i>Good video quality</li>
@@ -260,6 +269,31 @@
 </div>
 
 </div>
+
+<script>
+const monthly = document.getElementById("monthly");
+const yearly = document.getElementById("yearly");
+
+const precoP = document.querySelector("#precoP ");
+const precoB = document.querySelector("#precoB ");
+
+monthly.addEventListener("change", () => {
+  if (monthly.checked) {
+    precoP.textContent = "$15";
+	precoB.textContent = "$7";
+  }
+});
+
+yearly.addEventListener("change", () => {
+  if (yearly.checked) {
+    precoP.textContent = "$99";
+	precoB.textContent = "$79";
+  }
+});
+
+
+
+</script>
 
 </body>
 </html>
