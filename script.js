@@ -1,4 +1,4 @@
-<script>
+
 const monthly = document.getElementById("monthly");
 const yearly = document.getElementById("yearly");
 
@@ -20,5 +20,3 @@ yearly.addEventListener("change", () => {
 });
 
 
-
-</script>
