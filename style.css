@@ -208,5 +208,39 @@
 	h1{
 	font-family: "Assistant", sans-serif;
 	}
+
+@media (max-width: 380px) {
+
+	  .principal{
+	   flex-direction: column;
+        align-items: center;
+	    width: 90%;
+	    max-width: 600px;
+	    height: 1080px;
+	    background-color: var(--cor-fundo-branco);
+	  }
+
+	  .plano1, .plano2{
+	  	width: 100%;
+	    max-width: 300px;
+	  	height: auto;
+	  	border:none;
+	  	}
+
+	  	.texto1{
+	  	width: 100%;
+	    max-width: 328px;
+	  	height: 80px;;
+	  	margin-bottom: 0;
+	  	}
+
+	  	.texto1 h1{
+         text-align:center;
+		 font-size: 20px;
+	}
+
+
+
+	}
 	
 
